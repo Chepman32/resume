@@ -19,7 +19,7 @@ bradberry_title: "Bradberry Lab LLC",
 bradberry_period: "React-developer, June 2019 - April 2020",
 bradberry_text: "Developed SPA-applications for CRM-system, typeset pages of the online store",
 education_title: "Education",
-education_text: "Sevastopol National Technical University, Sevastopol",
+education_text: "Sevastopol National Technical University",
 education_courses: "Web Development Courses from Mail.ru Group",
 education_achievment: "I learned the basics of layout, expanded knowledge of Javascript, got acquainted with the frameworks of React and Vue"
 };
