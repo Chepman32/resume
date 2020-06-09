@@ -1,0 +1,26 @@
+let data = {
+  isLoading: true,
+  switchLangBtn: "Переключить язык",
+  language: "English",
+  profile_text_title: "ABOUT ME",
+profile_text: "Hello! My name is Anton Chepur, I have been engaged in front-end development since 2019, my main tool is Pure Javascript and the React.js framework, as well as the layout of responsive HTML5 / CSS3 web pages using scss preprocessors and the Bootstrap library. In addition, I am familiar with the technologies of MySQL, PHP, React Native, Vue.js and I have an understanding of BEM.",
+contacts__title: "Phone number/Whatsapp",
+languages_title: "Languages",
+languages_text_russian: "Russian",
+languages_text_english: "English",
+education_faculty: "Faculty of Automation and Computer Engineering, -Information Control Systems and Technologies",
+name: "Anton Chepur",
+desired_position: "Frontend-developer (React.js",
+about_address: "Russia, Crimea, Kerch city",
+experience_title: "Work experience",
+geekbrains_period: "March 2019 - May 2019",
+geekbrains_text: "Creating the Frontend part of a large training project, working with other team members, developing using the Scrum methodology.",
+bradberry_title: "Bradberry Lab LLC",
+bradberry_period: "React-developer, June 2019 - April 2020",
+bradberry_text: "Developed SPA-applications for CRM-system, typeset pages of the online store",
+education_title: "Education",
+education_text: "Sevastopol National Technical University, Sevastopol",
+education_courses: "Web Development Courses from Mail.ru Group",
+education_achievment: "I learned the basics of layout, expanded knowledge of Javascript, got acquainted with the frameworks of React and Vue"
+};
+export default data;

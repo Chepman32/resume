@@ -1,39 +1,23 @@
 import React from 'react';
-import Ava from "./assets/ava.jpg"
+import ruData from"./ruData"
+import engData from "./engData";
+import Ava from "./assets/ava.jpg";
 class App extends React.Component {
-    state = {
-        profile_text_title: "ОБО МНЕ",
-        profile_text: "Здравствуйте! Меня зовут Антон Чепур, я занимаюсь фронтенд-разработкой с 2019 года,\n" +
-            "                          мой основной инструмент - Pure Javascript и фреймворк React.js,\n" +
-            "                          а также верстка адаптивных веб страниц на HTML5/CSS3 с использованием " +
-            "препроцессоров scss и библиотеки Bootstrap. Помимо этого, я знаком с технологиями MySQL, PHP, React Native, Vue.js,имею понимание БЭМ.",
-        contacts__title: "Телефон/Whatsapp",
-        languages_title: "Владение языками",
-        languages_text_russian: "Русский",
-        languages_text_english: "Английский",
-        education_faculty: "Факультет автоматики и вычислительной техники, 7(8).080401-Информационные управляющие системы и технологии",
-        name: "Антон Чепур",
-        desired_position: "Фронтенд-разработчик (React.js",
-        about_address: "Россия, Крым, город Керчь",
-        experience_title: "Опыт работы",
-        geekbrains_period: "март 2019 - май 2019",
-        geekbrains_text: "написание Frontend-части крупного\n" +
-            "учебного проекта, работа с другими участниками команды, разработка по методологии Scrum.",
-        bradberry_title: "Брэдбери Лаб, ООО",
-        bradberry_period: "pre-middle React-разработчик, июнь 2019 - апрель 2020",
-        bradberry_text: "Разрабатывал SPA-приложения для CRM-системы, верстал страницы Интернет-магазина",
-        education_title: "Образование",
-        education_text: "Севастопольский национальный технический университет, Севастополь",
-        education_courses: "Курсы веб-разработки от Mail.ru Group",
-        education_achievment: "Обучился основам верстки, расширил знания Javascript, познакомился с фреймворками React и Vue"
+    state = ruData
+    componentDidMount() {
+        setTimeout(this.setState({isLoading: false}), 2000)
+    }
+    translateToEn() {
+        this.state.language === "Russian" ? this.setState(engData) : this.setState(ruData);
     }
   render() {
       return (
           <div className="container">
+              <button className="switchLang" onClick={this.translateToEn.bind(this)}>{this.state.switchLangBtn} </button>
               <div className="profile animated fadeInLeft">
                   <div className="profile__photo" style={{background: Ava}}></div>
                   <div className="profile-info">
-                      <h2 className="heading heading-light">Обо мне</h2>
+                      <h2 className="heading heading-light">{this.state.profile_text_title} </h2>
                       <p className="profile-text">{this.state.profile_text}</p>
                   </div>
                   <div className="contacts">
